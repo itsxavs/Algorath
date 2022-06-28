@@ -1,6 +1,6 @@
 # Algorath
 
-- There are a file .sql which is a bd script in server folder
+- There is a file .sql which is a bd script in server folder
 - Run server: npm run dev
 - Run client: npm start
 
