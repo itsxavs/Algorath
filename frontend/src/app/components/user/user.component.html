@@ -1,0 +1,12 @@
+<ng-container *ngIf="clickable; else onlyShow">
+  <div class="user__container" [ngClass]="{'user__selected': selected}" (click)="onClick()">
+    <p>{{user.name}}</p>
+  </div>
+
+</ng-container>
+
+<ng-template #onlyShow>
+  <div class="user__container">
+    <p>{{user.name}}</p>
+  </div>
+</ng-template>

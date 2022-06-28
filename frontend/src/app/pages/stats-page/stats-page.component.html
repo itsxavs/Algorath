@@ -1,0 +1,12 @@
+<div class="stats-page__container">
+    <div class="stats-page__row">
+      <div>USER</div>
+      <div>RELATIONS</div>
+    </div>
+    <div class="stats-page__scroll">
+      <div class="stats-page__user" *ngFor="let stat of stats">
+        <div class="stats-page__user">{{stat.user.name}}</div>
+        <div class="stats-page__user">{{stat.count}}</div>
+      </div>
+    </div>
+</div>

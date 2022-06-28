@@ -1,0 +1,18 @@
+.relation {
+  &__container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 160px;
+    height: 40px;
+    margin: 30px 0;
+  }
+
+  &__user{
+
+  }
+  &__and{
+    position: absolute;
+  }
+
+}

@@ -1,0 +1,13 @@
+<div class="app__container">
+
+  <app-form class="app__form" (newUser)="getUsers()"></app-form>
+  <div class="app__list">
+    <app-list [users]="users$ | async"></app-list>
+  </div>
+  <div>
+    <div class="app__button_container">
+      <button class="button app__button app__button__join" (click)="openJoin()">JOIN</button>
+      <button class=" button app__button app__button__stats" (click)="openStats()">STATS</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/cdk/overlay-prebuilt.css';
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.grid {
+  display: flex;
+}
+
+.example-overlay {
+  display: flex;
+  width: 700;
+  height: 500;
+  justify-content: center;
+  border-radius: 5px;
+  background: lightgrey;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+.example-overlay>li {
+  list-style-type: none;
+  border-bottom: solid 1px #8b8b8b;
+  padding: 8px 0;
+}
+
+.example-overlay>li:last-child {
+  border-bottom: none;
+}
+
+

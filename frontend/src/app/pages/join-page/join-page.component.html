@@ -1,0 +1,25 @@
+<div (click)="createRelation()"class="join-page__join">
+  JOIN
+</div>
+<div class="join-page__container">
+  <div class="join-page__table_container">
+
+    <div class="join-page__table container">
+      <div class="grid join-page__user" *ngFor="let user of (users$ | async)">
+        <a-user [user]="user" [clickable]="true" (selectedEvent)="userSelectedEvent($event)"></a-user>
+      </div>
+    </div>
+
+    <div class="join-page__table">
+      <div class="grid join-page__user" *ngFor="let user of usersNotJoin">
+        <a-user *ngIf="!!usersNotJoin" [user]="user" [clickable]="true" (selectedEvent)="userJoinEvent($event)"></a-user>
+      </div>
+    </div>
+    <div class="join-page__table">
+
+      <div  class="grid join-page__user" *ngFor="let relation of relationOfUser">
+        <app-relation [firstUser]="relation.firstUser" [secondUser]="relation.secondUser"></app-relation>
+      </div>
+    </div>
+  </div>
+</div>

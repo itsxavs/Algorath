@@ -1,0 +1,18 @@
+.user{
+  &__container{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    text-decoration: red;
+    border: 2px solid black;
+  }
+
+  &__selected {
+    background-color: red;
+  }
+
+
+
+}
